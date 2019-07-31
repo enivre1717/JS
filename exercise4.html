@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Exercise 4</title>
+        
+        <script type="text/javascript">
+            
+            //Qn 1 Answer
+            var objMovies = {
+                title: "Puff the Magic Dragon",
+                duration: 30,
+                stars: [
+                    "Puff", "Jackie", "Living Sneezes"
+                ]
+            };
+
+            console.log(objMovies.title+" lasts for "+objMovies.duration+" minutes. Stars: "+objMovies.stars.toString()+".");
+
+            //Qn 2 Answer
+
+            var cartForParty = {  
+              banana: "1.25",
+              handkerchief: ".99",
+              Tshirt: "25.01",
+              apple: "0.60",
+              nalgene: "10.34",
+              proteinShake: "22.36"
+            };
+
+            var items = Object.keys(cartForParty); // array of items by key   
+            var sum = 0; 
+              
+            for (var i = 0; i < items.length; i++) {
+                var itemName = items[i]; // get the name of the key for the item
+                var itemPrice = cartForParty[itemName]; // get the price for the item
+                sum += Number.parseFloat(itemPrice); // convert the price to a float and add it to the sum
+            }
+
+            console.log("Total Price: "+sum.toFixed(2));
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

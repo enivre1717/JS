@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Exercise 3</title>
+        
+        <script type="text/javascript">
+            
+            //Qn 1 Answer
+            var num1 = 50;
+            var num2 = 40;
+
+
+            if(num1 == 50 || num2 == 50){
+                console.log("One of the numbers is 50");
+
+            }else if((num1+num2) == 50){
+                console.log("Sum of the two numbers is 50");
+            }
+
+            //Qn 2 Answer
+            var aryNumbers = [45, 60, 99];
+
+            for(var i=0; i<aryNumbers.length; i++){
+
+                if(aryNumbers[i] >= 50 && aryNumbers[i] <= 99){
+                    console.log(aryNumbers[i] +" is within the range 50 to 99");
+                }
+            }
+
+            //Qn 3 Answer
+            var aryScores = [80,77,88,95,68];
+            var totalScore = 0;
+            var avgScore = 0;
+            var grade = '';
+
+            for(var i=0; i<aryScores.length; i++){
+
+                totalScore+= aryScores[i];
+            }
+
+            avgScore = totalScore/aryScores.length;
+
+            
+            switch(true){
+
+                case (avgScore<60):
+                    grade = 'F';
+                    break;
+                case (avgScore<70):
+                    grade = 'D';
+                    break;
+                case (avgScore<80):
+                    grade = 'C';
+                    break;
+                case (avgScore<90):
+                    grade = 'B';
+                    break;
+                case (avgScore<100):
+                    grade = 'A';
+                    break;  
+            }
+
+            console.log("The Grade is " + grade);
+
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

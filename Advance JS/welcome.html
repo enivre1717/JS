@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome</title>
+        <meta charset="UTF-8">
+        
+        <script type="text/javascript">
+            
+            window.onload = function(){
+                
+                var aryData = document.cookie.split(";");
+                
+                //we just want the first element data
+                var aryUserData = aryData[0].split("=");
+                
+                //display 2nd element in aryUserData into the element of id username
+                document.getElementById('username').innerHTML = aryUserData[1];
+            }
+        </script>
+    </head>
+    <body>
+        <div>Welcome, <span id="username"></span>!</div>
+    </body>
+</html>
